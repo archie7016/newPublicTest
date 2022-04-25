@@ -19,7 +19,8 @@ app.get('/api/server', (req, res) => {
 app.get('/api/welcome', (req, res) => {
     console.log("Welcome to the new app");
     console.log("Hello World!");
-    res.send('<h1>Hello World!</h1>');
+    res.send('<h1>Hello World!
+             <a href="index.html">Home</a></h1>');
 
 })
 
