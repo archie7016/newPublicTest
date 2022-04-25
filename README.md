@@ -1,2 +1,2 @@
 # newPublicTest
-tis is second app
+this is second app with public permissions
