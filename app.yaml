@@ -8,7 +8,7 @@ handlers:
    static_files: welcome.html
    upload: welcome.html
 
- - url: /api/.*
+ - url: /api/*
    secure: always
    redirect_http_response_code: 301
    script: auto
