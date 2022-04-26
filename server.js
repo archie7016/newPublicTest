@@ -11,6 +11,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
+app.get('/', (req, res) => {
+    res.send("<h1 style='color: brown'> This app is beautiful.</h1>")
+});
 
 app.get('/api/server', (req, res) => {
     res.send("Hello from server");
@@ -20,9 +23,9 @@ app.get('/api/welcome', (req, res) => {
     console.log("Welcome to the new app");
     console.log("Hello World!");
     res.send('<h1>Hello World!
-             <a href="index.html">Home</a></h1>');
+             <a href="welcome.html">Home</a></h1>');
 
-})
+});
 
 app.listen(PORT, () => {
     console.log("Server running on localhost::", PORT);
