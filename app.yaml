@@ -5,8 +5,8 @@ service: newtestapp
 
 handlers:
  - url: /
-   static_files: index.html
-   upload: index.html
+   static_files: welcome.html
+   upload: welcome.html
 
  - url: /api/.*
    secure: always
